@@ -8,16 +8,15 @@ let rideCymbals = Array(16).fill(false);
 const getDrumArrayByName = (name) => {
   switch (name){
     case 'kicks':
-    return 'kicks';
+    return kicks;
 
     case 'snares':
-    return 'snares';
+    return snares;
 
     case 'hiHats':
-    return 'hiHats';
+    return hiHats;
 
     case 'rideCymbals':
-    return 'rideCymbals';
 
     default:
     return;
