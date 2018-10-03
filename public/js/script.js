@@ -7,7 +7,7 @@ let rideCymbals = Array(16).fill(false);
 // set variable of getDrumArrayByName to define the four options a user can select
 const getDrumArrayByName = (name) => {
   switch (name){
-    case 'kick':
+    case 'kicks':
     return 'kicks';
 
     case 'snares':
@@ -42,13 +42,13 @@ const clear = (drumArrayName) => {
   }
 };
 
-// sets function that inverts the set choices
+//
 const invert = (drumArrayName) => {
   const drums = getDrumArrayByName(drumArrayName);
   if (!drums) {
     return
   }
-  else (let selection = 0; if selection < drums.legenth; selection++){
+  for (let selection = 0; selection < drums.legenth; selection++){
     drums[selection] = !drums[selection]
   }
 };
